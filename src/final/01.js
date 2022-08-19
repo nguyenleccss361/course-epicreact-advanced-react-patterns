@@ -83,7 +83,7 @@ async function updateUser(dispatch, user, updates) {
     return updatedUser
   } catch (error) {
     dispatch({type: 'fail update', error})
-    return Promise.reject(error)
+    return Promise.reject(error) // Or throw error
   }
 }
 
